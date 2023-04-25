@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Gotu';
+    src: url('../fonts/font-web/Gotu-Regular.eot');
+    src:url('../fonts/font-web/Gotu-Regular.woff2') format('woff2'),
+        url('../fonts/font-web/Gotu-Regular.woff') format('woff'),
+        url('../fonts/font-web/Gotu-Regular.ttf') format('truetype'),
+        url('../fonts/font-web/Gotu-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/font-web/Lora-Medium.eot');
+    src:url('../fonts/font-web/Lora-Medium.woff2') format('woff2'),
+        url('../fonts/font-web/Lora-Medium.woff') format('woff'),
+        url('../fonts/font-web/Lora-Medium.ttf') format('truetype'),
+        url('../fonts/font-web/Lora-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/font-web/Lora-Regular.eot');
+    src:url('../fonts/font-web/Lora-Regular.woff2') format('woff2'),
+        url('../fonts/font-web/Lora-Regular.woff') format('woff'),
+        url('../fonts/font-web/Lora-Regular.ttf') format('truetype'),
+        url('../fonts/font-web/Lora-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$fontFamily1: 'Gotu', Arial;
+$fontFamily2: 'Lora', Arial;
+
+
+$colorsecond: #C6B59E;
+$colorblack:#1D2827;
+$colorgreen:#20452A;
+$colorbrown:#CFAE89;
+
+.cl-gradient{
+    background: linear-gradient(180deg, #F0E4D8 0%, #BDB3AA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}

@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Gotu";
+  src: url("../fonts/font-web/Gotu-Regular.eot");
+  src: url("../fonts/font-web/Gotu-Regular.woff2") format("woff2"), url("../fonts/font-web/Gotu-Regular.woff") format("woff"), url("../fonts/font-web/Gotu-Regular.ttf") format("truetype"), url("../fonts/font-web/Gotu-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/font-web/Lora-Medium.eot");
+  src: url("../fonts/font-web/Lora-Medium.woff2") format("woff2"), url("../fonts/font-web/Lora-Medium.woff") format("woff"), url("../fonts/font-web/Lora-Medium.ttf") format("truetype"), url("../fonts/font-web/Lora-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/font-web/Lora-Regular.eot");
+  src: url("../fonts/font-web/Lora-Regular.woff2") format("woff2"), url("../fonts/font-web/Lora-Regular.woff") format("woff"), url("../fonts/font-web/Lora-Regular.ttf") format("truetype"), url("../fonts/font-web/Lora-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.cl-gradient {
+  background: linear-gradient(180deg, #F0E4D8 0%, #BDB3AA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Lora", Arial;
+}
+
+#header_site {
+  width: 100%;
+  position: fixed;
+  padding: 24px 0px;
+}
+#header_site .logo_site img {
+  height: 48px;
+  width: auto;
+}
+#header_site .menu_site {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  -moz-column-gap: 75px;
+       column-gap: 75px;
+  padding-left: 60px;
+  margin-bottom: 0;
+}
+#header_site .menu_site li a {
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 8px 12px;
+  font-weight: 500;
+}
+#header_site .language-switcher #language-select {
+  background: none;
+  color: #CFAE89;
+  border-color: transparent;
+}
+#header_site .language-switcher:focus {
+  outline: none;
+}
+#header_site .language-switcher:checked {
+  background-color: #f0e4d8;
+  color: #333;
+}
+
+.wrapper_content {
+  height: 100vh;
+  background: url("../images/background.png");
+}
+.wrapper_content .banner_info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+.wrapper_content .banner_info .cl-gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+.wrapper_content .banner_info .cl-gradient .col-lg-2 {
+  font-size: 40px;
+  line-height: 51.2px;
+  padding: 0;
+}
+.wrapper_content .banner_info .cl-gradient .col-lg-auto {
+  display: flex;
+  font-size: 72px;
+  line-height: 92.16px;
+  padding: 0;
+}/*# sourceMappingURL=main.css.map */

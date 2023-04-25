@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Gotu';
+    src: url('Gotu-Regular.eot');
+    src: url('Gotu-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Gotu-Regular.woff2') format('woff2'),
+        url('Gotu-Regular.woff') format('woff'),
+        url('Gotu-Regular.ttf') format('truetype'),
+        url('Gotu-Regular.svg#Gotu-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

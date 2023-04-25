@@ -1,0 +1,79 @@
+@import '_var.scss';
+
+body{
+    overflow-x: hidden;
+    font-family: $fontFamily2;
+}
+
+#header_site{
+    width: 100%;
+    position: fixed;
+    padding: 24px 0px;
+
+    .logo_site{
+        img{
+            height: 48px;
+            width: auto;
+        }
+    }
+    .menu_site{
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        column-gap: 75px;
+        padding-left: 60px;
+        margin-bottom: 0;
+        li{
+            a{
+                text-decoration: none;
+                font-size: 16px;
+                display: block;
+                padding: 8px 12px;
+                font-weight: 500;
+            }
+        }
+    }
+    .language-switcher{
+        #language-select{
+            background: none;
+            color: $colorbrown;
+            border-color: transparent;
+        }
+        &:focus{
+            outline: none;
+        }
+        &:checked{
+            background-color: #f0e4d8;
+            color: #333;
+        }
+    }
+}
+.wrapper_content{
+    height: 100vh;
+    background: url('../images/background.png');
+    .banner_info{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        .cl-gradient{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+            .col-lg-2{
+                font-size: 40px;
+                line-height: 51.2px;
+                padding: 0;
+            }
+            .col-lg-auto{
+                display: flex;
+                font-size: 72px;
+                line-height: 92.16px;
+                padding: 0;
+            }
+        }
+    }
+}
