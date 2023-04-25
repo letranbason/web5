@@ -39,6 +39,7 @@ body {
   width: 100%;
   position: fixed;
   padding: 24px 0px;
+  top: 0;
 }
 #header_site .logo_site img {
   height: 48px;
@@ -54,6 +55,7 @@ body {
   margin-bottom: 0;
 }
 #header_site .menu_site li a {
+  text-transform: uppercase;
   text-decoration: none;
   font-size: 16px;
   display: block;
@@ -73,32 +75,112 @@ body {
   color: #333;
 }
 
-.wrapper_content {
+#banner {
   height: 100vh;
   background: url("../images/background.png");
+  background-size: cover;
+  background-position: center top;
 }
-.wrapper_content .banner_info {
+#banner .banner_info {
   position: absolute;
-  top: 50%;
   left: 50%;
+  top: 70%;
   transform: translate(-50%, -50%);
   width: 70%;
 }
-.wrapper_content .banner_info .cl-gradient {
+#banner .banner_info .cl-gradient {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 100%;
 }
-.wrapper_content .banner_info .cl-gradient .col-lg-2 {
+#banner .banner_info .cl-gradient .col-lg-2 {
+  text-transform: uppercase;
   font-size: 40px;
   line-height: 51.2px;
   padding: 0;
 }
-.wrapper_content .banner_info .cl-gradient .col-lg-auto {
+#banner .banner_info .cl-gradient .col-lg-auto {
+  text-transform: uppercase;
   display: flex;
   font-size: 72px;
   line-height: 92.16px;
   padding: 0;
+}
+#banner .banner_info .sub_title {
+  text-transform: uppercase;
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 24px;
+}
+#banner .banner_info .sub_title p {
+  padding: 0 80px;
+}
+
+#overview_site {
+  height: 100vh;
+  background: #20452A;
+  top: 0;
+}
+#overview_site img {
+  width: 100%;
+  height: auto;
+}
+#overview_site .content_overview {
+  position: relative;
+  padding: 0 210px;
+}
+#overview_site .content_overview .slider {
+  overflow: hidden;
+  position: relative;
+}
+#overview_site .content_overview .slider .slide {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+#overview_site .content_overview .slider .slide .view {
+  text-transform: uppercase;
+  color: #CFAE89;
+  font-size: 24px;
+  line-height: 30.72px;
+}
+#overview_site .content_overview .slider .slide .title {
+  padding-top: 36px 0;
+  font-size: 56px;
+  line-height: 71.68px;
+  color: #C6B59E;
+}
+#overview_site .content_overview .slider .slide .detail_overview {
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #CFAE89;
+}
+#overview_site .content_overview .slider-pages {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#detail {
+  height: 50vh;
+  background: #20452A;
+  font-family: "Gotu", Arial;
+  color: #C6B59E;
+  text-align: center;
+  align-items: center;
+  padding-top: 100px;
+}
+#detail .big_infor {
+  font-size: 64px;
+  line-height: 106.24px;
+}
+#detail .small_infor {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
 }/*# sourceMappingURL=main.css.map */
