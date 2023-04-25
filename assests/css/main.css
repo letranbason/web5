@@ -34,6 +34,135 @@ body {
   overflow-x: hidden;
   font-family: "Lora", Arial;
 }
+@media (min-width: 320px) and (max-width: 786px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+
+.menu_site_mobile {
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .menu_site_mobile {
+    display: block;
+  }
+  .menu_site_mobile .hamburger-button {
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    width: 45px;
+    height: 34px;
+    display: block;
+    top: 2rem;
+    right: 2rem;
+    z-index: 100;
+  }
+  .menu_site_mobile .hamburger-button span {
+    position: absolute;
+    height: 5px;
+    border-radius: 4px;
+    width: 90%;
+    background-color: #000;
+    top: 1px;
+    right: 1px;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  .menu_site_mobile .hamburger-button span:nth-child(1) {
+    top: 0px;
+  }
+  .menu_site_mobile .hamburger-button span:nth-child(2),
+  .menu_site_mobile .hamburger-button span:nth-child(3) {
+    top: 13px;
+  }
+  .menu_site_mobile .hamburger-button span:nth-child(4) {
+    top: 26px;
+  }
+  .menu_site_mobile .hamburger-button.active span {
+    background-color: #FFF;
+  }
+  .menu_site_mobile .hamburger-button.active span:nth-child(1),
+  .menu_site_mobile .hamburger-button.active span:nth-child(4) {
+    opacity: 0;
+  }
+  .menu_site_mobile .hamburger-button.active span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .menu_site_mobile .hamburger-button.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  .menu_site_mobile .overlay {
+    position: fixed;
+    background: #20452A;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 1s, height 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu_site_mobile nav {
+    font-size: 1rem;
+    font-family: "Lora", Arial;
+    text-align: center;
+  }
+  .menu_site_mobile nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .menu_site_mobile nav ul li {
+    opacity: 1;
+    margin: 1rem 0;
+  }
+  .menu_site_mobile nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+    opacity: 0.75;
+  }
+  .menu_site_mobile nav ul li a:hover {
+    opacity: 1;
+  }
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 1;
+      transform: translate3d(-25%, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .menu_site_mobile .overlay.visible {
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+  .menu_site_mobile .overlay.visible li {
+    animation: fadeInLeft 0.3s ease forwards;
+  }
+  .menu_site_mobile .overlay.visible li:nth-of-type(1) {
+    animation-delay: 0.23s;
+  }
+  .menu_site_mobile .overlay.visible li:nth-of-type(2) {
+    animation-delay: 0.26s;
+  }
+  .menu_site_mobile .overlay.visible li:nth-of-type(3) {
+    animation-delay: 0.29s;
+  }
+  .menu_site_mobile .overlay.visible li:nth-of-type(4) {
+    animation-delay: 0.32s;
+  }
+  .menu_site_mobile .overlay.visible li:nth-of-type(5) {
+    animation-delay: 0.35s;
+  }
+}
 
 #header_site {
   width: 100%;
@@ -73,6 +202,21 @@ body {
 #header_site .language-switcher:checked {
   background-color: #f0e4d8;
   color: #333;
+}
+@media (min-width: 320px) and (max-width: 786px) {
+  #header_site {
+    display: none;
+  }
+  #header_site .logo_site img {
+    height: 30px;
+    width: auto;
+  }
+  #header_site .menu_site {
+    display: none;
+  }
+  #header_site .language-switcher {
+    display: none;
+  }
 }
 
 #banner {
@@ -116,6 +260,21 @@ body {
 }
 #banner .banner_info .sub_title p {
   padding: 0 80px;
+}
+@media (min-width: 320px) and (max-width: 786px) {
+  #banner .banner_info {
+    top: 57%;
+  }
+  #banner .banner_info .cl-gradient .col-lg-2 {
+    font-size: 20px;
+  }
+  #banner .banner_info .cl-gradient .col-lg-auto {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  #banner .banner_info .sub_title p {
+    padding: 0px;
+  }
 }
 
 #overview_site {
@@ -165,8 +324,36 @@ body {
   right: 0;
   text-align: center;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  #overview_site {
+    height: 105vh;
+  }
+  #overview_site img {
+    padding: 10px 0;
+  }
+  #overview_site .content_overview {
+    padding: 0;
+  }
+  #overview_site .content_overview .slider .slide .view {
+    font-size: 18px;
+  }
+  #overview_site .content_overview .slider .slide .title {
+    font-size: 25px;
+    line-height: 35px;
+    padding: 0;
+  }
+  #overview_site .content_overview .slider .slide .detail_overview {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  #overview_site .content_overview .slider .slide .detail_overview p {
+    margin: 0;
+  }
+}
 
 #detail {
+  position: relative;
   height: 50vh;
   background: #20452A;
   font-family: "Gotu", Arial;
@@ -175,12 +362,74 @@ body {
   align-items: center;
   padding-top: 100px;
 }
+#detail::before {
+  position: absolute;
+  content: "";
+  background: white;
+  height: 1px;
+  bottom: 95%;
+  width: 100vw;
+  right: -0.75rem;
+}
+#detail::after {
+  position: absolute;
+  content: "";
+  background: white;
+  height: 1px;
+  bottom: 15%;
+  width: 100vw;
+  right: -0.75rem;
+}
 #detail .big_infor {
+  position: relative;
   font-size: 64px;
   line-height: 106.24px;
+}
+#detail .line::before {
+  position: absolute;
+  content: "";
+  background: white;
+  height: 2vw;
+  bottom: 148%;
+  width: 1px;
+  right: 0.7rem;
+}
+#detail .line::after {
+  position: absolute;
+  content: "";
+  background: white;
+  height: 2vw;
+  top: 161%;
+  width: 1px;
+  right: 0.7rem;
 }
 #detail .small_infor {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 24px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  #detail::before {
+    display: none;
+  }
+  #detail::after {
+    display: none;
+  }
+  #detail .big_infor {
+    font-size: 30px;
+  }
+  #detail .line::before {
+    display: none;
+  }
+  #detail .line::after {
+    display: none;
+  }
+  #detail .small_infor {
+    font-size: 10px;
+  }
+}
+
+#partner_site {
+  background: #BB9973;
+  height: 50vh;
 }/*# sourceMappingURL=main.css.map */
