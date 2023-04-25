@@ -384,6 +384,7 @@ body {
   position: relative;
   font-size: 64px;
   line-height: 106.24px;
+  flex-wrap: wrap;
 }
 #detail .line::before {
   position: absolute;
@@ -404,11 +405,15 @@ body {
   right: 0.7rem;
 }
 #detail .small_infor {
+  flex-wrap: wrap;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 24px;
 }
 @media (min-width: 320px) and (max-width: 768px) {
+  #detail {
+    padding: 0;
+  }
   #detail::before {
     display: none;
   }
@@ -417,6 +422,7 @@ body {
   }
   #detail .big_infor {
     font-size: 30px;
+    line-height: 50px;
   }
   #detail .line::before {
     display: none;
@@ -426,6 +432,7 @@ body {
   }
   #detail .small_infor {
     font-size: 10px;
+    line-height: 10px;
   }
 }
 
