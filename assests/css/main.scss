@@ -3,11 +3,7 @@
 body{
     overflow-x: hidden;
     font-family: $fontFamily2;
-    @media(min-width:320px) and (max-width:786px){
-        overflow-x: hidden;
-       
-        width: 100%;
-    }      
+    width: 100%;  
 }
 
 .menu_site_mobile{
