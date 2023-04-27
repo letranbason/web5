@@ -33,7 +33,12 @@
 body {
   overflow-x: hidden;
   font-family: "Lora", Arial;
-  width: 100%;
+}
+@media (min-width: 320px) and (max-width: 786px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
 }
 
 .menu_site_mobile {
@@ -271,7 +276,7 @@ body {
     line-height: 45px;
   }
   #banner .banner_info .sub_title p {
-    padding: 0px;
+    padding: 10px;
   }
 }
 
@@ -372,7 +377,7 @@ body {
 
 #detail {
   position: relative;
-  height: 50vh;
+  height: 60vh;
   background: #20452A;
   font-family: "Gotu", Arial;
   color: #C6B59E;
@@ -409,7 +414,7 @@ body {
   content: "";
   background: white;
   height: 2vw;
-  bottom: 148%;
+  bottom: 154%;
   width: 1px;
   right: 0.7rem;
 }
@@ -418,7 +423,7 @@ body {
   content: "";
   background: white;
   height: 2vw;
-  top: 161%;
+  top: 155%;
   width: 1px;
   right: 0.7rem;
 }
@@ -430,7 +435,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 768px) {
   #detail {
-    padding: 0;
+    padding-top: 30px;
   }
   #detail::before {
     display: none;
@@ -481,12 +486,26 @@ body {
   height: 1px;
   bottom: 0%;
   width: 20vw;
-  left: 14rem;
+  left: 12rem;
 }
 #partner_site .partner {
   position: absolute;
   bottom: 50px;
-  left: 13%;
+  left: 10%;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  #partner_site .title {
+    top: 40%;
+  }
+  #partner_site .title h2 {
+    padding: 0;
+  }
+  #partner_site .title h2::before {
+    display: none;
+  }
+  #partner_site .partner {
+    left: 0;
+  }
 }
 
 #picture_site {
@@ -582,7 +601,7 @@ body {
 }
 
 #standard_site {
-  height: 120vh;
+  height: 150vh;
   background: url("../images/image5.png");
   background-size: cover;
   background-position: center center;
@@ -593,16 +612,84 @@ body {
 #standard_site img {
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: 10%;
   transform: translate(-50%, -50%);
 }
-#standard_site .title {
+#standard_site .infor {
+  position: absolute;
+  top: 20%;
   text-transform: uppercase;
+  text-align: center;
+}
+#standard_site .infor .title {
   font-size: 24px;
   line-height: 31px;
 }
-#standard_site .main {
-  text-transform: uppercase;
+#standard_site .infor .main {
   font-size: 56px;
   line-height: 72px;
+  top: 30%;
+}
+#standard_site .detail {
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  top: 45%;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  #standard_site {
+    height: 210vh;
+  }
+  #standard_site img {
+    top: 5%;
+  }
+  #standard_site .infor {
+    top: 8%;
+  }
+  #standard_site .infor .title {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  #standard_site .infor .main {
+    font-size: 30px;
+    line-height: 40px;
+    top: 25%;
+  }
+  #standard_site .detail {
+    top: 22%;
+  }
+}
+
+#floor_plan_site {
+  height: 100vh;
+  background: url("../images/background_partner.png");
+  font-family: "Lora", Arial;
+  text-transform: uppercase;
+  color: #5C432E;
+  position: relative;
+}
+#floor_plan_site .text .floor_plan {
+  font-size: 24px;
+  line-height: 30.72px;
+  padding-top: 50px;
+}
+#floor_plan_site .text .main_title {
+  font-size: 56px;
+  line-height: 71.68px;
+  color: #20452A;
+  padding: 36px 0;
+}
+#floor_plan_site .text .paragrahp {
+  font-size: 16px;
+  line-height: 24px;
+}
+#floor_plan_site .picture_floor figure img {
+  width: 95%;
+}
+
+#testimonial_site {
+  height: 150vh;
+  background: url("../images/image5.png");
+  background-size: cover;
+  background-position: center center;
 }/*# sourceMappingURL=main.css.map */
