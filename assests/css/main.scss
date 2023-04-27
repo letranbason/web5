@@ -468,7 +468,7 @@ body {
             height: 2vw;
             bottom: 154%;
             width: 1px;
-            right: 0.7rem;
+            right: 0.1rem;
         }
 
         &::after {
@@ -478,7 +478,7 @@ body {
             height: 2vw;
             top: 155%;
             width: 1px;
-            right: 0.70rem;
+            right: 0.1rem;
         }
     }
 
@@ -577,7 +577,7 @@ body {
 }
 
 #picture_site {
-    height: 90vh;
+    height: 100vh;
 
     .col-lg-6 {
         padding: 0;
@@ -677,7 +677,7 @@ body {
 }
 
 #location_site {
-    height: 100vh;
+    height: 115vh;
     background: #20452A;
 }
 
@@ -776,6 +776,33 @@ body {
         figure{
             img{
                 width: 95%;
+            }
+        }
+    }
+    @media (min-width:320px) and (max-width:768px){
+        .text{
+            text-align: center;
+            .floor_plan{
+                font-size: 20px;
+                line-height: 25px;
+                padding-top: 20px;
+            }
+            .main_title{
+                font-size: 35px;
+                line-height: 45px;
+                color: #20452A;
+                padding: 20px 0;
+            }
+            .paragrahp{
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+        .picture_floor{
+            figure{
+                img{
+                    width: 95%;
+                }
             }
         }
     }
