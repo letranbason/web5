@@ -578,17 +578,15 @@ body {
 
 #picture_site {
     height: 100vh;
-
+    background-color: #000;
     .col-lg-6 {
         padding: 0;
-
         .picture {
             .col-6 {
                 padding: 0;
-
+                position: relative;                
                 .pic {
-                    position: relative;
-                    display: inline-block;
+                    display: block;
 
                     .overlay {
                         position: absolute;
@@ -679,6 +677,34 @@ body {
 #location_site {
     height: 115vh;
     background: #20452A;
+        .image-container {
+        position: relative;
+        width: 500px; // adjust the width to your preference
+        height: 500px; // adjust the height to your preference
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        }
+
+        .button-container {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        button {
+            margin: 0 10px;
+            padding: 5px 10px;
+        }
+    }
 }
 
 #amenities {
@@ -813,4 +839,84 @@ body {
     background: url('../images/image5.png');
     background-size: cover;
     background-position: center center;
+    .content{
+        padding-top: 10px;
+        position: relative;
+        .title{
+            color: #C6B59E;
+            font-size: 24px;
+            line-height: 36px;
+        }   
+        .sub_title{
+            padding-top: 25px;
+            color: #CFAE89;
+            font-size: 16px;
+            line-height: 24px;
+            position: relative;
+            padding-left: 10px;
+            &::before {
+                position: absolute;
+                content: "";
+                background: white;
+                height: 7vw;
+                top:25%;
+                width: 1px;
+                right: 22.25rem;
+            }
+        }
+    }
+    .second{
+        padding-top: 90px;
+    }
+    .content2{
+        padding-top: 10px;
+        text-align: end;
+        .title{
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 31px;
+            color: #A98A69;
+        }
+        .sub_title{
+            padding-top: 36px;
+            font-size: 56px;
+            line-height: 72px;
+            color: #C6B59E;
+        }
+    }
+    @media (min-width:320px) and (max-width:768px){
+        height: 120vh;
+        .second{
+            padding: 0;
+        }
+        .content{
+            .title{
+                font-size: 18px;
+                line-height: 20px;
+            }
+            .sub_title{
+                font-size: 12px;
+                line-height: 15px;
+                padding-top: 10px;
+            }
+        }
+        .content2{
+            text-align: center;
+            padding-top: 40px;
+            .title{
+                font-size: 20px;
+                line-height: 22px;
+            }
+            .sub_title{
+                padding-top: 10px;
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+    }
+}
+
+#form_site{
+    height: 80vh;
+    background: #20452A;
 }
