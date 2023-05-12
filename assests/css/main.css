@@ -280,99 +280,66 @@ body {
   }
 }
 
-#overview_site {
-  height: 100vh;
+#overview {
   background: #20452A;
-  top: 0;
+  padding-bottom: 1rem;
 }
-#overview_site img {
-  width: 100%;
-  height: auto;
+#overview .overview_block .overview_content .slider-control .btn-control {
+  cursor: pointer;
 }
-#overview_site .content_overview {
-  position: relative;
-  padding: 0 50px;
+#overview .overview_param {
+  border-top: 1px solid #CFAE89;
+  border-bottom: 1px solid #CFAE89;
 }
-#overview_site .content_overview .slider {
-  overflow: hidden;
-  position: relative;
+#overview .overview_param .param-item {
+  padding: 9rem 0;
 }
-#overview_site .content_overview .slider .slide {
-  float: left;
-  width: 100%;
-  position: relative;
-}
-#overview_site .content_overview .slider .slide .view {
-  text-transform: uppercase;
-  color: #CFAE89;
-  font-size: 24px;
-  line-height: 30.72px;
-}
-#overview_site .content_overview .slider .slide .title {
-  padding-top: 36px 0;
-  font-size: 56px;
-  line-height: 71.68px;
-  color: #C6B59E;
-}
-#overview_site .content_overview .slider .slide .detail_overview {
-  margin-top: 40px;
-  font-size: 16px;
-  line-height: 24px;
-  color: #CFAE89;
-}
-#overview_site .content_overview .slider-pages {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-@media (min-width: 320px) and (max-width: 768px) {
-  #overview_site {
-    height: 105vh;
-  }
-  #overview_site img {
-    padding: 10px 0;
-  }
-  #overview_site .content_overview {
-    padding: 0;
-  }
-  #overview_site .content_overview .slider .slide .view {
-    font-size: 18px;
-  }
-  #overview_site .content_overview .slider .slide .title {
-    font-size: 25px;
-    line-height: 35px;
-    padding: 0;
-  }
-  #overview_site .content_overview .slider .slide .detail_overview {
-    font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 0;
-  }
-  #overview_site .content_overview .slider .slide .detail_overview p {
-    margin: 0;
-  }
-}
-@media (min-width: 780px) and (max-width: 1200px) {
-  #overview_site {
-    height: 60vh;
+@media (max-width: 767px) {
+  #overview .overview_param .param-item {
+    padding: 3rem 0;
     position: relative;
   }
-  #overview_site img {
-    position: absolute;
-    top: 0;
+}
+#overview .overview_param .param-item .wrap-ele {
+  position: relative;
+}
+#overview .overview_param .param-item .wrap-ele .page-item-info {
+  position: absolute;
+  right: -20px;
+}
+@media (max-width: 767px) {
+  #overview .overview_param .param-item .wrap-ele .page-item-info {
     right: 0;
-    width: 30%;
   }
-  #overview_site .content_overview {
-    position: absolute;
-    top: 20px;
-    right: 0px;
+}
+#overview .overview_param .row div:not(:last-child) .param-item {
+  position: relative;
+}
+@media (max-width: 767px) {
+  #overview .overview_param .row div:not(:last-child) .param-item::before {
+    display: none;
   }
-  #overview_site .content_overview .detail_overview {
-    padding-right: 30%;
+  #overview .overview_param .row div:not(:last-child) .param-item::after {
+    display: none;
   }
+}
+#overview .overview_param .row div:not(:last-child) .param-item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 50px;
+  background-color: #CFAE89;
+}
+#overview .overview_param .row div:not(:last-child) .param-item::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 50px;
+  background-color: #CFAE89;
 }
 
 #detail {
